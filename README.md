@@ -26,6 +26,7 @@ II. Dans IntelliJ :
      
 
 III. Mode cluster AWS : 
+
 1. faire en sorte que le fichier hbase-site.xml utilisé par le programme soit celui de AWS. deux options à réaliser :
     i. remplacer le hase-site à l'intérieur du projet par le bon contenu
     ii. passer en argument du programme le chemin vers le bon hbase-site pour qu'il soit chargé lors de l'exécution
