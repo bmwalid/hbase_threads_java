@@ -24,12 +24,21 @@ II. Dans IntelliJ :
      ii. lire par rowkey
      iii. lire par Scan
      
+
+III. Mode cluster AWS : 
+1. faire en sorte que le fichier hbase-site.xml utilisé par le programme soit celui de AWS. deux options à réaliser :
+    i. remplacer le hase-site à l'intérieur du projet par le bon contenu
+    ii. passer en argument du programme le chemin vers le bon hbase-site pour qu'il soit chargé lors de l'exécution
+2. packager l'application sous forme de jar avec maven
+3. talécharger le jar sur le cluster ou sur la machine EC2
+4. Exécuter ce jar pour qu'il crée la table Hbase et insère des données
+
      
-     
-III. Mode avancé : insérer de très grandes quantités de lignes dans Hbase
-    i. utiliser un ThreadPoolExecutor (modifier la méthode 'insertionMassive')
-    ii. attacher un Objet de type Runnable qui fait de l'insertion de données
-    iii. Lancer cette exécution.
+IV. Mode avancé : insérer de très grandes quantités de lignes dans Hbase
+
+1. utiliser un ThreadPoolExecutor (modifier la méthode 'insertionMassive')
+2. attacher un Objet de type Runnable qui fait de l'insertion de données
+3. Lancer cette exécution.
     
   
   
