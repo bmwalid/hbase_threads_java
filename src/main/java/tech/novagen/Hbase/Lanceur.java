@@ -133,6 +133,7 @@ public class Lanceur {
         }
 
         threadPoolExecutor.shutdown();
+
         // threadPoolExecutor.execute(...);
 
     }
